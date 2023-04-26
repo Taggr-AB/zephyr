@@ -59,10 +59,8 @@ enum sensor_channel {
 	SENSOR_CHAN_ACCEL_Z,
 	/** Acceleration on the X, Y and Z axes. */
 	SENSOR_CHAN_ACCEL_XYZ,
-    /** Acceleration low-trigger. Used to indicate when we go from active to idle accelerometers that have an idle state*/
-    SENSOR_CHAN_ACCEL_LOW,
-    /** Acceleration high-trigger. Used to indicate when we go from idle into active for accelerometers that have an idle state*/
-    SENSOR_CHAN_ACCEL_HIGH,
+    /** Acceleration low/high changed. */
+    SENSOR_CHAN_ACCEL_CHANGED,
 	/** Angular velocity around the X axis, in radians/s. */
 	SENSOR_CHAN_GYRO_X,
 	/** Angular velocity around the Y axis, in radians/s. */
